@@ -5,7 +5,8 @@ import express from "express";
 import path from "path";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
-import { initializeServer } from "kerberos";
+import kerberos from "kerberos";
+const { initializeServer } = kerberos;
 
 // Load .env konfiguraciju
 dotenv.config();
