@@ -27,7 +27,7 @@ const app = express();
 app.use(express.static(__dirname));
 
 // ➕ Ruta za osnovnu stranu — ispisuje info o serveru
-app.get("/", (req, res) => {
+app.get("/info", (req, res) => {
     const info = `
 ────────────────────────────────────────────
 🚀 Kerberos SPNEGO demo server pokrenut
